@@ -169,7 +169,7 @@ set of possible operations:
 
 ### Get the information of the node
 
-```
+```js
 import { getNodeInfo } from 'fiware-iota';
 
 getNodeInfo().then((res) => {
@@ -184,7 +184,7 @@ create of an account followed up with 2 steps:
     1.  create a new seed (you can also skip this step by using your existing seed)
     2. calling a create new account function
     
-```
+```js
 import { generateSeed, createNewAddress } from 'fiware-iota';
 //generate a new seed
 const seed = generateSeed();
@@ -201,7 +201,7 @@ create of an account followed up with 2 steps:
     1.  create a new seed (you can also skip this step by using your existing seed)
     2. calling a create new account function
     
-```
+```js
 import { generateSeed, createNewAddress } from 'fiware-iota';
 //generate a new seed
 const seed = generateSeed();
@@ -214,7 +214,7 @@ createNewAddress(seed).then((res) => {
 ```
 
 ### Fetch any Transaction
-```
+```js
 import { fetchTransaction } from 'fiware-iota';
 fetchTransaction('HEQLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWOR99D')
   .then((res) => {
@@ -226,7 +226,7 @@ fetchTransaction('HEQLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHE
 
 
 ### Status of any Transaction
-```
+```js
 import { statusTransaction } from 'fiware-iota';
 
 statusTransaction(['VDEVCBMSEUTOJNWSBCRQHJWAWXZCTFYUGFZXEPCFUVXQHEPQNL9I9BMMVFTUFTDEPRHRGPAIRAOVKQ999'])
@@ -238,7 +238,7 @@ statusTransaction(['VDEVCBMSEUTOJNWSBCRQHJWAWXZCTFYUGFZXEPCFUVXQHEPQNL9I9BMMVFTU
 ```
 
 ### Create a MaM Transaction (public)
-```
+```js
 import { createMamTransaction } from 'fiware-iota';
 
 createMamTransaction('test').then((re) => {
@@ -249,7 +249,7 @@ createMamTransaction('test').then((re) => {
 ```
 
 ### Create a MaM Transaction (private)
-```
+```js
 import { createMamTransaction } from 'fiware-iota';
 
 createMamTransaction('test', { mode: 'restricted', secret: '1234' }).then((re) => {
@@ -260,7 +260,7 @@ createMamTransaction('test', { mode: 'restricted', secret: '1234' }).then((re) =
 ```
 
 ### Fetch a MaM Transaction (public)
-```
+```js
 import { fetchMamTransaction, decodeMessage } from 'fiware-iota';
 
 fetchMamTransaction('9QBGGEEYGPNRZ9NQYBIVBNRJVPXWJUFHTKSRHOJZTNNKOBPBWGSXD9QRABWFDNP9VDOCRVHEIDPOWIUWC', 'public', null, (res) => {
@@ -270,7 +270,7 @@ fetchMamTransaction('9QBGGEEYGPNRZ9NQYBIVBNRJVPXWJUFHTKSRHOJZTNNKOBPBWGSXD9QRABW
 ```
 
 ### Fetch a MaM Transaction (private)
-```
+```js
 import { fetchMamTransaction, decodeMessage } from 'fiware-iota';
 
 fetchMamTransaction('QQUTOYQDKWGEOSNDERIUTLNFJLKXKPGMZVDJJJNPMSXSIYHJDUUMZUEI9GGQSFQJD9GRVGCMNDDATPWDN', 'restricted', 'DONTSHARETHIS', (res) => {
