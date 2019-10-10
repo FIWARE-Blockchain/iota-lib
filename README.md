@@ -321,6 +321,12 @@ fetchMamTransaction(
 );
 ```
 
+# Pending (implementation)
+
+1. getBalance
+2. confirmTransaction
+3. Test-Case
+
 # License
 
 MIT © Har Preet Singh
