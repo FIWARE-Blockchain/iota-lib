@@ -1,8 +1,8 @@
 /*
-* FIWARE-IOTA
-* Author: harpreet.singh@fiware.org
-* Github: https://github.com/singhhp1069/fiware-iota
-*/
+ * FIWARE-IOTA
+ * Author: harpreet.singh@fiware.org
+ * Github: https://github.com/singhhp1069/fiware-iota
+ */
 import {
   setProvider,
   getProvider,
@@ -10,9 +10,7 @@ import {
   getTcpProvider,
 } from './config';
 
-import {
-  getNodeInfo
-} from './info';
+import { getNodeInfo } from './info';
 
 import {
   generateSeed,
@@ -20,13 +18,10 @@ import {
   encodeMessage,
   decodeMessage,
   sortTransactionMessage,
-  getBalance
+  getBalance,
 } from './util';
 
-import {
-  createMamTransaction,
-  fetchMamTransaction,
-} from './mam';
+import { createMamTransaction, fetchMamTransaction } from './mam';
 
 import {
   createTransaction,

@@ -1,8 +1,8 @@
 /*
-* FIWARE-IOTA
-* Author: harpreet.singh@fiware.org
-* Github: https://github.com/singhhp1069/fiware-iota
-*/
+ * FIWARE-IOTA
+ * Author: harpreet.singh@fiware.org
+ * Github: https://github.com/singhhp1069/fiware-iota
+ */
 // Global configurations
 global.config = {
   compose: '',
@@ -11,7 +11,7 @@ global.config = {
   security: {
     index: 0,
     security: 2,
-  }
+  },
 };
 // setting default global configuration
 global.config.compose = { provider: 'https://nodes.devnet.thetangle.org:443' };
@@ -22,7 +22,7 @@ global.config.zmq = { provider: 'tcp://zmq.devnet.iota.org:5556' };
  * @description set a new provider instead default
  */
 const setProvider = (providerEndpoint) => {
-  if ((typeof providerEndpoint === 'undefined') || providerEndpoint === '') {
+  if (typeof providerEndpoint === 'undefined' || providerEndpoint === '') {
     throw new Error('incorrect provider endpoint');
   }
   global.config.compose = providerEndpoint;
@@ -33,7 +33,7 @@ const setProvider = (providerEndpoint) => {
  * @description set TcpProvider instead default (zmq endpoint)
  */
 const setTcpProvider = (tcpEndpoint) => {
-  if ((typeof tcpEndpoint === 'undefined') || tcpEndpoint === '') {
+  if (typeof tcpEndpoint === 'undefined' || tcpEndpoint === '') {
     throw new Error('incorrect tcp endpoint');
   }
   global.config.zmq = tcpEndpoint;
@@ -54,8 +54,5 @@ const getProvider = () => global.config.providerEndpoint;
 const getTcpProvider = () => global.config.tcpEndpoint;
 
 export {
-  setProvider,
-  getProvider,
-  getTcpProvider,
-  setTcpProvider,
+  setProvider, getProvider, getTcpProvider, setTcpProvider
 };

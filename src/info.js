@@ -1,8 +1,8 @@
 /*
-* FIWARE-IOTA
-* Author: harpreet.singh@fiware.org
-* Github: https://github.com/singhhp1069/fiware-iota
-*/
+ * FIWARE-IOTA
+ * Author: harpreet.singh@fiware.org
+ * Github: https://github.com/singhhp1069/fiware-iota
+ */
 
 import * as iotalib from '@iota/core';
 
@@ -14,11 +14,14 @@ import * as iotalib from '@iota/core';
 const getNodeInfo = () => {
   const instance = iotalib.composeAPI(global.config.compose);
   return new Promise((resolve, reject) => {
-    instance.getNodeInfo().then((response) => {
-      resolve(response);
-    }).catch((error) => {
-      reject(error);
-    });
+    instance
+      .getNodeInfo()
+      .then((response) => {
+        resolve(response);
+      })
+      .catch((error) => {
+        reject(error);
+      });
   });
 };
 

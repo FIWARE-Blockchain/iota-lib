@@ -1,8 +1,8 @@
 /*
-* FIWARE-IOTA
-* Author: harpreet.singh@fiware.org
-* Github: https://github.com/singhhp1069/fiware-iota
-*/
+ * FIWARE-IOTA
+ * Author: harpreet.singh@fiware.org
+ * Github: https://github.com/singhhp1069/fiware-iota
+ */
 import cp from 'child_process';
 import os from 'os';
 import * as iotalib from '@iota/core';
@@ -16,12 +16,25 @@ import * as iotautil from '@iota/converter';
 const generateSeed = () => {
   switch (os.platform()) {
     case 'darwin':
-      return cp.execSync("cat /dev/urandom | LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1", { maxBuffer: 82, encoding: 'ascii' }).trim();
+      return cp
+        .execSync(
+          "cat /dev/urandom | LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1",
+          { maxBuffer: 82, encoding: 'ascii' }
+        )
+        .trim();
     case 'win32':
-      throw new Error("IOTA seed can't be generated for Windows operating system at the moment:(");
+      throw new Error(
+        "IOTA seed can't be generated for Windows operating system at the moment:("
+      );
     default:
-      // eslint-disable-next-line no-template-curly-in-string
-      return cp.execSync('cat /dev/urandom | tr -dc A-Z9 | head -c${1:-81}', { encoding: 'ascii' }).trim();
+      return (
+        cp
+          // eslint-disable-next-line no-template-curly-in-string
+          .execSync('cat /dev/urandom | tr -dc A-Z9 | head -c${1:-81}', {
+            encoding: 'ascii',
+          })
+          .trim()
+      );
   }
 };
 
@@ -35,19 +48,22 @@ const generateSeed = () => {
  */
 const createNewAddress = (seed, option) => {
   // option param for security level
-  const options = (typeof option !== 'undefined') ? option : global.config.security;
+  const options = typeof option !== 'undefined' ? option : global.config.security;
   // initiating instance
   const instance = iotalib.composeAPI(global.config.compose);
   // check if seed exist or empty
-  if ((typeof seed === 'undefined') || seed === '') {
+  if (typeof seed === 'undefined' || seed === '') {
     throw new Error('seed is missing');
   }
   return new Promise((resolve, reject) => {
-    instance.getNewAddress(seed, options).then((response) => {
-      resolve(response);
-    }).catch((error) => {
-      reject(error);
-    });
+    instance
+      .getNewAddress(seed, options)
+      .then((response) => {
+        resolve(response);
+      })
+      .catch((error) => {
+        reject(error);
+      });
   });
 };
 
