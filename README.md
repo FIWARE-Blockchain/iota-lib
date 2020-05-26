@@ -1,7 +1,7 @@
 # FIWARE-IOTA Plugin
 
 [![Build Status](https://travis-ci.org/FIWARE-Blockchain/iota-lib.svg?branch=master)](https://travis-ci.org/FIWARE-Blockchain/iota-lib)
-[![dependencies Status](https://img.shields.io/ /FIWARE-Blockchain/iota-lib)](https://img.shields.io/david/FIWARE-Blockchain/iota-lib)
+[![dependencies Status](https://img.shields.io/FIWARE-Blockchain/iota-lib)](https://img.shields.io/david/FIWARE-Blockchain/iota-lib)
 [![devDependencies Status](https://img.shields.io/david/dev/FIWARE-Blockchain/iota-lib)](https://img.shields.io/david/dev/FIWARE-Blockchain/iota-lib)
 [![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 [![Github issues](https://img.shields.io/github/issues/FIWARE-Blockchain/iota-lib)](https://github.com/FIWARE-Blockchain/iota-lib/issues)
