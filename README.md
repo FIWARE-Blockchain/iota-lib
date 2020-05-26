@@ -1,9 +1,11 @@
-# FIWARE-IOTA Plugin
+# IOTA Lib
 
 [![Build Status](https://travis-ci.org/FIWARE-Blockchain/iota-lib.svg?branch=master)](https://travis-ci.org/FIWARE-Blockchain/iota-lib)
 [![dependencies Status](https://img.shields.io/david/FIWARE-Blockchain/iota-lib)](https://img.shields.io/david/FIWARE-Blockchain/iota-lib)
 [![devDependencies Status](https://img.shields.io/david/dev/FIWARE-Blockchain/iota-lib)](https://img.shields.io/david/dev/FIWARE-Blockchain/iota-lib)
 [![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
+[![Github issues](https://img.shields.io/github/issues/FIWARE-Blockchain/iota-lib)](https://github.com/FIWARE-Blockchain/iota-lib/issues)
+[![Coverage Status](https://coveralls.io/repos/github/FIWARE-Blockchain/iota-lib/badge.svg?branch=master)](https://coveralls.io/github/FIWARE-Blockchain/iota-lib?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This project is a library (wrapper around IOTA) ot integrate with FIWARE.
