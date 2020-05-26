@@ -1,12 +1,12 @@
 # FIWARE-IOTA Plugin
 
-[![Build Status](https://travis-ci.org/singhhp1069/fiware-iota.svg?branch=master)](https://travis-ci.org/singhhp1069/fiware-iota)
-[![dependencies Status](https://img.shields.io/david/singhhp1069/fiware-iota)](https://img.shields.io/david/singhhp1069/fiware-iota)
-[![devDependencies Status](https://img.shields.io/david/dev/singhhp1069/fiware-iota)](https://img.shields.io/david/dev/singhhp1069/fiware-iota)
+[![Build Status](https://travis-ci.org/FIWARE-Blockchain/iota-lib.svg?branch=master)](https://travis-ci.org/FIWARE-Blockchain/iota-lib)
+[![dependencies Status](https://img.shields.io/david/FIWARE-Blockchain/iota-lib)](https://img.shields.io/david/FIWARE-Blockchain/iota-lib)
+[![devDependencies Status](https://img.shields.io/david/dev/FIWARE-Blockchain/iota-lib)](https://img.shields.io/david/dev/FIWARE-Blockchain/iota-lib)
 [![Support badge](https://nexus.lab.fiware.org/repository/raw/public/badges/stackoverflow/fiware.svg)](https://stackoverflow.com/questions/tagged/fiware)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This project is a library (wrapper around IOTA) ot integrate with FIWARE orion context broker.
+This project is a library (wrapper around IOTA) ot integrate with FIWARE.
 
 # Background
 
@@ -19,7 +19,7 @@ to support FIWARE Ecosystem.
 # Installation
 
 ```sh
-npm install --save fiware-iota
+npm install --save iota-lib
 ```
 
 # Functions
@@ -329,4 +329,4 @@ fetchMamTransaction(
 
 # License
 
-MIT © Har Preet Singh
+[MIT](https://github.com/FIWARE-Blockchain/iota-lib/blob/master/LICENSE) © 2020 FIWARE Foundation e.V.
