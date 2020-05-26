@@ -1,7 +1,7 @@
 /*
  * FIWARE-IOTA
  * Author: harpreet.singh@fiware.org
- * Github: https://github.com/singhhp1069/fiware-iota
+ * Github: https://github.com/FIWARE-Blockchain/fiware-iota
  */
 import cp from 'child_process';
 import os from 'os';

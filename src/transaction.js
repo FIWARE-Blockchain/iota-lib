@@ -1,7 +1,7 @@
 /*
  * FIWARE-IOTA
  * Author: harpreet.singh@fiware.org
- * Github: https://github.com/singhhp1069/fiware-iota
+ * Github: https://github.com/FIWARE-Blockchain/fiware-iota
  */
 import * as iotalib from '@iota/core';
 import * as iotautil from '@iota/converter';

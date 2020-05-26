@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/singhhp1069/iota-lib.git"
+    "url": "git+https://github.com/FIWARE-Blockchain/iota-lib.git"
   },
   "keywords": [
     "npm",
@@ -37,9 +37,9 @@
   "author": "Har Preet Singh <harpreet.singh@fiware.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/singhhp1069/iota-lib/issues"
+    "url": "https://github.com/FIWARE-Blockchain/iota-lib/issues"
   },
-  "homepage": "https://github.com/singhhp1069/iota-lib#readme",
+  "homepage": "https://github.com/FIWARE-Blockchain/iota-lib#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
