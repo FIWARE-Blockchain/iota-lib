@@ -187,7 +187,7 @@ set of possible operations:
 ### Get the information of the node
 
 ```js
-import { getNodeInfo } from "fiware-iota";
+import { getNodeInfo } from "iota-lib";
 
 getNodeInfo()
     .then(res => {
@@ -204,7 +204,7 @@ create of an account followed up with 2 steps: 1. create a new seed (you can als
 seed) 2. calling a create new account function
 
 ```js
-import { generateSeed, createNewAddress } from "fiware-iota";
+import { generateSeed, createNewAddress } from "iota-lib";
 //generate a new seed
 const seed = generateSeed();
 //create a new account
@@ -223,7 +223,7 @@ create of an account followed up with 2 steps: 1. create a new seed (you can als
 seed) 2. calling a create new account function
 
 ```js
-import { generateSeed, createNewAddress } from "fiware-iota";
+import { generateSeed, createNewAddress } from "iota-lib";
 //generate a new seed
 const seed = generateSeed();
 //create a new account
@@ -239,7 +239,7 @@ createNewAddress(seed)
 ### Fetch any Transaction
 
 ```js
-import { fetchTransaction } from "fiware-iota";
+import { fetchTransaction } from "iota-lib";
 fetchTransaction("HEQLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWOR99D")
     .then(res => {
         console.log(`response is :${JSON.stringify(res)}`);
@@ -252,7 +252,7 @@ fetchTransaction("HEQLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHE
 ### Status of any Transaction
 
 ```js
-import { statusTransaction } from "fiware-iota";
+import { statusTransaction } from "iota-lib";
 
 statusTransaction(["VDEVCBMSEUTOJNWSBCRQHJWAWXZCTFYUGFZXEPCFUVXQHEPQNL9I9BMMVFTUFTDEPRHRGPAIRAOVKQ999"])
     .then(res => {
@@ -266,7 +266,7 @@ statusTransaction(["VDEVCBMSEUTOJNWSBCRQHJWAWXZCTFYUGFZXEPCFUVXQHEPQNL9I9BMMVFTU
 ### Create a MaM Transaction (public)
 
 ```js
-import { createMamTransaction } from "fiware-iota";
+import { createMamTransaction } from "iota-lib";
 
 createMamTransaction("test")
     .then(re => {
@@ -280,7 +280,7 @@ createMamTransaction("test")
 ### Create a MaM Transaction (private)
 
 ```js
-import { createMamTransaction } from "fiware-iota";
+import { createMamTransaction } from "iota-lib";
 
 createMamTransaction("test", { mode: "restricted", secret: "1234" })
     .then(re => {
@@ -294,7 +294,7 @@ createMamTransaction("test", { mode: "restricted", secret: "1234" })
 ### Fetch a MaM Transaction (public)
 
 ```js
-import { fetchMamTransaction, decodeMessage } from "fiware-iota";
+import { fetchMamTransaction, decodeMessage } from "iota-lib";
 
 fetchMamTransaction(
     "9QBGGEEYGPNRZ9NQYBIVBNRJVPXWJUFHTKSRHOJZTNNKOBPBWGSXD9QRABWFDNP9VDOCRVHEIDPOWIUWC",
@@ -310,7 +310,7 @@ fetchMamTransaction(
 ### Fetch a MaM Transaction (private)
 
 ```js
-import { fetchMamTransaction, decodeMessage } from "fiware-iota";
+import { fetchMamTransaction, decodeMessage } from "iota-lib";
 
 fetchMamTransaction(
     "QQUTOYQDKWGEOSNDERIUTLNFJLKXKPGMZVDJJJNPMSXSIYHJDUUMZUEI9GGQSFQJD9GRVGCMNDDATPWDN",
